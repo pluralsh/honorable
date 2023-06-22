@@ -31,7 +31,7 @@ jobs:
         node-version: ${{ steps.engines.outputs.nodeVersion }}
         registry-url: 'https://registry.npmjs.org'
     - name: 'Install Dependencies'
-      run: yarn install --immutable
+      run: npm install --immutable
 
     # - name: Install Semantic Release Plus
     #   run: npm install -g semantic-release-plus
