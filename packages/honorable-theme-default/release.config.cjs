@@ -6,7 +6,7 @@ const pathToRepoRoot = '../..';
 
 module.exports = {
   extends: `${pathToRepoRoot}/release.config.base.cjs`,
-//   pkgRoot: `${pathToRepoRoot}/dist/${srcRoot}`,
+  pkgRoot: `dist`,
   tagFormat: name + '-v${version}',
   commitPaths: [
     `*`,
