@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "release": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx semantic-release-plus",
+        "cwd": "packages/honorable/",
+        "parallel": false
+      }
+    }
+  }
+}

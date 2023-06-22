@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const name = 'honorable-recipe-xflex';
-const srcRoot = `packages/${name}`;
+// const srcRoot = `packages/${name}`;
 const pathToRepoRoot = '../..';
 
 module.exports = {
@@ -9,6 +9,6 @@ module.exports = {
 //   pkgRoot: `${pathToRepoRoot}/dist/${srcRoot}`,
   tagFormat: name + '-v${version}',
   commitPaths: [
-    `${srcRoot}/*`,
+    `*`,
   ],
 };
