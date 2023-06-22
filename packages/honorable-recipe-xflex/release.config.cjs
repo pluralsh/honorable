@@ -5,7 +5,7 @@ const name = 'honorable-recipe-xflex';
 const pathToRepoRoot = '../..';
 
 module.exports = {
-  extends: `${pathToRepoRoot}/release.config.base.js`,
+  extends: `${pathToRepoRoot}/release.config.base.cjs`,
 //   pkgRoot: `${pathToRepoRoot}/dist/${srcRoot}`,
   tagFormat: name + '-v${version}',
   commitPaths: [

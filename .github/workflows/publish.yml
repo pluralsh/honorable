@@ -31,13 +31,19 @@ jobs:
         node-version: ${{ steps.engines.outputs.nodeVersion }}
         registry-url: 'https://registry.npmjs.org'
     - name: 'Install Dependencies'
-      run: npm install --immutable
+      run: npm ci
+    - name: 'Build'
+      run: |
+        npx nx affected --target build --parallel 3
+# npx nx format:check
+# npx nx affected --target lint --parallel 3
+# npx nx affected --target test --parallel 3 --ci --code-coverage
 
     # - name: Install Semantic Release Plus
     #   run: npm install -g semantic-release-plus
 
     - name: 'Run Semantic Release'
-      run: npx semantic-release-plus
+      run: npx nx affected --target release --all
       env:
         GITHUB_TOKEN: ${{ secrets.PLURAL_BOT_PAT }}
         NODE_AUTH_TOKEN: ${{ secrets.PLURAL_BOT_NPM_TOKEN }}

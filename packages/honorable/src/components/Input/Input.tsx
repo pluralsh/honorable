@@ -210,7 +210,6 @@ function InputRef(props: InputProps, ref: Ref<any>) {
         />
       )}
       {multiline && (
-        // @ts-expect-error
         <TextareaAutosize
           ref={forkedRef}
           autoFocus={autoFocus}

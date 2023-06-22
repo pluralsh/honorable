@@ -9,7 +9,6 @@ import useHonorable from './hooks/useHonorable.js'
 
 // React HOC to support style props
 function withHonorableTag<P>(tag: keyof JSX.IntrinsicElements, name: ComponentNames) {
-  // @ts-expect-error
   const HonorableStyle = styled(
     tag,
     {
@@ -25,6 +24,7 @@ function withHonorableTag<P>(tag: keyof JSX.IntrinsicElements, name: ComponentNa
       <HonorableStyle
         ref={ref}
         theme={theme}
+        // @ts-expect-error
         honorable={honorable}
         {...otherProps}
       />
