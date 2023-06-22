@@ -20,6 +20,11 @@ const mpConversion = {
   p: 'padding',
 }
 
+interface mpConversion {
+  m: string
+  p: string
+}
+
 const xConversion = {
   '': [''],
   x: ['Left', 'Right'],
@@ -42,12 +47,12 @@ function convertMpValue(value: any, multiplier: number) {
 
 function decodeMp(key: string, value: any, multiplier: number) {
   const [mp, x = ''] = key.split('')
-  const property = mpConversion[mp]
+  const property = mpConversion[mp as keyof mpConversion]
   const decodedValue = convertMpValue(value, multiplier)
 
-  const decoded = {}
+  const decoded: any = {}
 
-  xConversion[x]
+  xConversion[x as keyof typeof xConversion]
     .map((x: string) => property + x)
     .forEach((property: string) => {
       decoded[property] = decodedValue
