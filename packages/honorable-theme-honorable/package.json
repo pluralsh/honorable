@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dherault/honorable.git"
+    "url": "git+https://github.com/pluralsh/honorable.git"
   },
   "bugs": {
-    "url": "https://github.com/dherault/honorable/issues"
+    "url": "https://github.com/pluralsh/honorable/issues"
   },
-  "homepage": "https://github.com/dherault/honorable#readme",
+  "homepage": "https://github.com/pluralsh/honorable#readme",
   "keywords": [
     "Honorable",
     "theme"
