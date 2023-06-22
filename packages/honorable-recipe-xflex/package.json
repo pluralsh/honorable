@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable-recipe-xflex",
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0",
   "description": "A flexbox solution recipe for honorable",
   "main": "dist/index.js",
   "scripts": {

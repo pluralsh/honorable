@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable-theme-default",
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0",
   "description": "The default honorable theme",
   "main": "dist/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "rimraf": "^4.1.2"
   },
   "peerDependencies": {
-    "@pluralsh/honorable": "*",
+    "@pluralsh/honorable": ">=1.0.0",
     "@emotion/react": ">=10.0.0"
   },
   "publishConfig": {

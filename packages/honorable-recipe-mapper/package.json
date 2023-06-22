@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable-recipe-mapper",
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0",
   "description": "A mapping solution recipe for honorable",
   "main": "dist/index.js",
   "scripts": {
