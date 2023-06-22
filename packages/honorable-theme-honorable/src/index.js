@@ -1,6 +1,6 @@
-import { mergeTheme } from 'honorable'
-import defaultTheme from 'honorable-theme-default'
-import mpRecipe from 'honorable-recipe-mp'
+import { mergeTheme } from '@pluralsh/honorable'
+import defaultTheme from '@pluralsh/honorable-theme-default'
+import mpRecipe from '@pluralsh/honorable-recipe-mp'
 
 export default mergeTheme(defaultTheme, {
   name: 'Honorable',

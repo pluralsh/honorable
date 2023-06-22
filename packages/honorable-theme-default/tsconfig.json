@@ -16,8 +16,8 @@
       "*": ["node_modules/*"],
       "@assets/*": ["./assets/*"],
       "@src/*": ["./src/*"],
-      "honorable": ["node_modules/honorable"],
-      "honorable/*": ["node_modules/honorable/*"]
+      "@pluralsh/honorable": ["node_modules/@pluralsh/honorable"],
+      "@pluralsh/honorable/*": ["node_modules/@pluralsh/honorable/*"]
     },
     "lib": [
       "ESNext",

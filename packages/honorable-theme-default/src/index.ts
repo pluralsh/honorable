@@ -1,5 +1,5 @@
 import { keyframes } from '@emotion/react'
-import { HonorableTheme } from 'honorable'
+import { HonorableTheme } from '@pluralsh/honorable'
 
 import createElevation from './createElevation'
 
