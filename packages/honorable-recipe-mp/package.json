@@ -1,5 +1,5 @@
 {
-  "name": "honorable-recipe-mp",
+  "name": "@pluralsh/honorable-recipe-mp",
   "version": "0.4.0",
   "description": "A spacing solution recipe for honorable",
   "main": "dist/index.js",

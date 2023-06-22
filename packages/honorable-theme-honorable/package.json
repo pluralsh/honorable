@@ -1,5 +1,5 @@
 {
-  "name": "honorable-theme-honorable",
+  "name": "@pluralsh/honorable-theme-honorable",
   "version": "0.21.0",
   "description": "The honorable theme for the Honorable project",
   "main": "dist/index.js",
