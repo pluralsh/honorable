@@ -12,6 +12,8 @@ on:
     - 'nx.json'
     - '.github/workflows/publish.yml'
     - '.releaserc'
+    - '**/tsconfig.json'
+    - 'tsconfig.base.json'
     branches:
     - 'main'
   workflow_dispatch:
