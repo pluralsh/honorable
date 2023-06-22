@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable-theme-honorable",
-  "version": "0.21.0",
+  "version": "0.0.0-semantic-release",
   "description": "The honorable theme for the Honorable project",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "clean": "npm run clean:build",
     "clean:build": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build",
-    "release": "npx semantic-release-plus --dry-run"
+    "release": "npx semantic-release-plus"
   },
   "repository": {
     "type": "git",

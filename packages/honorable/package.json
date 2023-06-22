@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable",
-  "version": "1.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "An extensible React component librarie for 2023 and beyond",
   "type": "module",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "clean:build": "rimraf dist",
     "clean:peerDependencies": "rimraf node_modules/react node_modules/react-dom",
     "prepublishOnly": "npm run clean && npm run lint && npm test && npm run build",
-    "release": "npx semantic-release-plus --dry-run"
+    "release": "npx semantic-release-plus"
   },
   "repository": {
     "type": "git",

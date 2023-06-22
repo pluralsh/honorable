@@ -1,6 +1,6 @@
 {
   "name": "@pluralsh/honorable-recipe-gap",
-  "version": "0.4.0",
+  "version": "0.0.0-semantic-release",
   "description": "A gapping solution recipe for honorable",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "clean": "npm run clean:build",
     "clean:build": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build",
-    "release": "npx semantic-release-plus --dry-run"
+    "release": "npx semantic-release-plus"
   },
   "keywords": [
     "honorable",
