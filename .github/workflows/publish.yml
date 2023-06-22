@@ -4,8 +4,9 @@ on:
   push:
     paths:
     - '*.js'
-    - 'package.json'
-    - 'yarn.lock'
+    - '*.cjs'
+    - '**/package.json'
+    - '**/package-lock.json'
     - '.github/workflows/publish.yml'
     - '.releaserc'
     branches:
