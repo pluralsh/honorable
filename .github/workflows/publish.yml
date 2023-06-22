@@ -32,9 +32,10 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - name: 'Install Dependencies'
       run: npm ci
-    - name: 'Build'
-      run: |
-        npx nx affected --target build --parallel 3
+    - name: Build affected
+      uses: mansagroup/nrwl-nx-action@v3.2.1
+      with:
+        targets: build
 # npx nx format:check
 # npx nx affected --target lint --parallel 3
 # npx nx affected --target test --parallel 3 --ci --code-coverage
@@ -42,8 +43,10 @@ jobs:
     # - name: Install Semantic Release Plus
     #   run: npm install -g semantic-release-plus
 
-    - name: 'Run Semantic Release'
-      run: npx nx affected --target release --all
+    - name: Release affected
+      uses: mansagroup/nrwl-nx-action@v3.2.1
+      with:
+        targets: release
       env:
         GITHUB_TOKEN: ${{ secrets.PLURAL_BOT_PAT }}
         NODE_AUTH_TOKEN: ${{ secrets.PLURAL_BOT_NPM_TOKEN }}
