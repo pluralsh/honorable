@@ -28,7 +28,7 @@
     "rimraf": "^4.1.2"
   },
   "peerDependencies": {
-    "honorable": ">=1.0.0-beta.8",
+    "@pluralsh/honorable": "*",
     "@emotion/react": ">=10.0.0"
   },
   "publishConfig": {
