@@ -7,6 +7,9 @@ on:
     - '*.cjs'
     - '**/package.json'
     - '**/package-lock.json'
+    - 'package.json'
+    - 'package-lock.json'
+    - 'nx.json'
     - '.github/workflows/publish.yml'
     - '.releaserc'
     branches:
