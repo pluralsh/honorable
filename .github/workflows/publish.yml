@@ -39,7 +39,7 @@ jobs:
     - name: 'Install Dependencies'
       run: npm ci
     - name: Build affected
-      uses: mansagroup/nrwl-nx-action@v3.2.1
+      uses: mansagroup/nrwl-nx-action@v3.2.2
       with:
         targets: build
 # npx nx format:check
@@ -50,7 +50,7 @@ jobs:
     #   run: npm install -g semantic-release-plus
 
     - name: Release affected
-      uses: mansagroup/nrwl-nx-action@v3.2.1
+      uses: mansagroup/nrwl-nx-action@v3.2.2
       with:
         targets: release
         parallel: 1
